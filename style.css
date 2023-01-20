@@ -1,0 +1,51 @@
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/*Navbar start*/
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 874px;
+    background-color: antiquewhite;
+}
+.nav-main{
+    display: flex;
+}
+.nav-item{
+    justify-items: end;
+    align-items: center;
+}
+.nav-all{
+    display: flex;
+    list-style: none;
+    justify-items: end;
+}
+.cover-main{
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: center;
+}
+.cover-title{
+    font-size: 54px;
+}
+.cover img{
+    width: 100%;
+    margin-top: 30px;
+}
+.btn{
+    background-color: red;
+    
+    margin-left: 180px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn a{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* team start*/
