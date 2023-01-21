@@ -9,36 +9,81 @@ main{
 }
 .container{
     width: 874px;
-    background-color: antiquewhite;
 }
 .nav-main{
-    display: flex;
-}
-.nav-item{
-    justify-items: end;
-    align-items: center;
+    display: flex; 
 }
 .nav-all{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    justify-items: end;
+    gap: 50px;
+}
+.nav-all li a{
+    text-decoration: none;
 }
 .cover-main{
     padding-left: 200px;
     padding-right: 200px;
-    align-items: center;
+    align-items: center; 
 }
 .cover-title{
     font-size: 54px;
+    text-align: center;
+}
+.cover-detail{
+    text-align: center;
 }
 .cover img{
     width: 100%;
     margin-top: 30px;
 }
+.cover-btn{
+    background-color: rgb(225, 123, 7);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+.cover-btn a{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.cover-btn:hover {
+    background-color: rgb(132, 242, 238);
+}
+/* team start*/
+.team-main{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.team-list{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);    
+    gap: 10px;
+}
+.team-list img{
+    width: 210px;
+}
+.team-detail{
+    text-align: center;
+    margin-top: 100px;
+}
+.team-detail-read{
+    color: rgb(181, 178, 178);
+
+}
+.team-detail-our{
+    color: black;
+}
+.team-deatail-detail{
+    color: orange;
+}
 .btn{
-    background-color: red;
-    
-    margin-left: 180px;
+    background-color: rgb(249, 166, 33);
     padding: 5px;
     border-radius: 5px;
 }
@@ -46,6 +91,197 @@ main{
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+/* architech start*/
+    .con-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+.con-main h1{
+    font-size: 35px;
+}
+.con-photo img{
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+}
+.con-detail{
+    background-color: rgb(255, 255, 255);
+     padding: 7px;
+    border-radius: 8px;
+    box-shadow: rgba(139, 139, 139, 0.9) 0px 2px 8px 0px;
+    margin-bottom: 10px ;
+}
+/*fact section start*/
+.fact{
+padding-right: 400px;
+}
+.fact h1{
+    font-size: 30px; 
+}
+.fact-icon img{
+    padding-top: 10px;
+    padding-left: 35%;
+}
+.fact-box h1{
+    text-align: center;
+}
+.fact-box p{
+    text-align: center;
+}
+.fact-box{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(225, 147, 2);
+    height: 150px;
+    width: 150px;
+    margin-top: 60px;
+}
+.fact-box-all{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+/*client section start*/
+.client{
+    text-align: center;
+    margin: 140px 140px 50px 140px;
+    
+}
+.client h1{
+    font-size: 30px;
+}
+.client-icon{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+}
+.client-logo img{
+    height: 30px;
+    width: 80px;
+}
+/*service start*/
+.service-title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+
+}
+.service-pack{
+    background-color: rgb(125, 156, 249);
+    height: 170px;
+    width: 190px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px ;
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-/* team start*/
+/*footer start*/
+.footer{
+    margin-top: 120px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
+}
+/*small device responsive*/
+@media only screen and (max-width: 668px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .nav-main{
+        flex-direction: column; 
+    }
+    .nav-all{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .cover-main{
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center; 
+    }
+    .cover-title{
+        font-size: 24px;
+    }
+    .team-main{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 100px;
+        background-color: rgb(255, 255, 255);
+    }
+    .team-list{
+        grid-template-columns: repeat(1, 1fr);    
+        gap: 10px;
+    }
+    .team-list img{
+        width: 100%;
+    }
+    .con-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+    .con-main h1{
+        font-size: 35px;
+    }
+    .con-photo img{
+        width: 100%;
+        padding: 30px;
+    }
+    .client{
+        text-align: center;
+        margin: 40px;
+    }
+    .client h1{
+        font-size: 20px;
+    }
+    .client-icon{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 40%;
+    }
+    .client-logo img{
+        height: 30px;
+        width: 80px;
+    }
+    .fact{
+        padding-right: 4px;
+        text-align: center;
+    }
+    .fact-box-all{
+        grid-template-columns: 1fr;
+        margin: 30%;
+    }
+    .service-title{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .service{
+        grid-template-columns: 1fr;
+        margin: 20%;
+    }
+    .service-pack{
+        background-color: rgb(125, 156, 249);
+        height: 170px;
+        width: 190px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px ;
+        align-items: center;
+    }  
+}
